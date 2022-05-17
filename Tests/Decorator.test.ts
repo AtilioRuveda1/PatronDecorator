@@ -13,3 +13,9 @@ test('2)Cuando_EnemigoBaseConCasoRecibeDaño_Deberia_DevolverOcho', () =>  {
     const enemigoBaseConCasco = new CascoDecorator(enemigo);
     expect(enemigoBaseConCasco.recibeDaño()).toBe(8);
 });
+
+test('3)Cuando_EnemigoBaseConArmaduraRecibeDaño_Deberia_Devolver7', () =>  {
+    const enemigo = new EnemigoBase;
+    const enemigoBaseConCasco = new CascoDecorator(enemigo);
+    expect(enemigoBaseConCasco.recibeDaño()).toBe(7);
+});
