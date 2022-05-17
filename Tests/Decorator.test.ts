@@ -14,8 +14,14 @@ test('2)Cuando_EnemigoBaseConCasoRecibeDaño_Deberia_DevolverOcho', () =>  {
     expect(enemigoBaseConCasco.recibeDaño()).toBe(8);
 });
 
-test('3)Cuando_EnemigoBaseConArmaduraRecibeDaño_Deberia_Devolver7', () =>  {
+test('3)Cuando_EnemigoBaseConArmaduraRecibeDaño_Deberia_DevolverSiete', () =>  {
     const enemigo = new EnemigoBase;
     const enemigoBaseConArmadura = new ArmaduraDecorator(enemigo);
     expect(enemigoBaseConArmadura.recibeDaño()).toBe(7);
+});
+
+test('4)Cuando_EnemigoBaseConArmaduraYCascoRecibeDaño_Deberia_Devolver"5,6"', () =>  {
+    const enemigo = new EnemigoBase;
+    const enemigoBaseConArmadura = new ArmaduraDecorator(enemigo);
+    expect(enemigoBaseConArmadura.recibeDaño()).toBe(5.6);
 });
