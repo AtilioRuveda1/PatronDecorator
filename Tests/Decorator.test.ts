@@ -16,6 +16,6 @@ test('2)Cuando_EnemigoBaseConCasoRecibeDaño_Deberia_DevolverOcho', () =>  {
 
 test('3)Cuando_EnemigoBaseConArmaduraRecibeDaño_Deberia_Devolver7', () =>  {
     const enemigo = new EnemigoBase;
-    const enemigoBaseConCasco = new CascoDecorator(enemigo);
-    expect(enemigoBaseConCasco.recibeDaño()).toBe(7);
+    const enemigoBaseConArmadura = new ArmaduraDecorator(enemigo);
+    expect(enemigoBaseConArmadura.recibeDaño()).toBe(7);
 });
