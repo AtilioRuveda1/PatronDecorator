@@ -31,6 +31,6 @@ test('4)Cuando_EnemigoBaseConArmaduraYCascoRecibeDaño_Deberia_Devolver"5,6"', (
 
 //ENEMIGO FUERTE
 test('5)Cuando_EnemigoFuerteRecibeDaño_Deberia_Devolver5', () =>  {
-    const enemigo = new EnemigoBase;
+    const enemigo = new EnemigoFuerte;
     expect(enemigo.recibeDaño()).toBe(5);
 });
