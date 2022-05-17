@@ -43,6 +43,6 @@ test('6)Cuando_EnemigoFuerteConCascoRecibeDaño_Deberia_DevolverCuatro', () =>  
 
 test('7)Cuando_EnemigoFuerteConArmaduraRecibeDaño_Deberia_Devolver"3,5"', () =>  {
     const enemigo = new EnemigoFuerte;
-    const enemigoFuerteConCasco = new CascoDecorator(enemigo);
-    expect(enemigoFuerteConCasco.recibeDaño()).toBe(3.5);
+    const enemigoFuerteConArmadura = new ArmaduraDecorator(enemigo);
+    expect(enemigoFuerteConArmadura.recibeDaño()).toBe(3.5);
 });
